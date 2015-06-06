@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="white" type="color">#FFF</item>
+
+    <item name="light_blue" type="color">#ffdfeaf1</item>
+
+    <item name="magenta" type="color">#CD0E3E</item>
+    <item name="magenta_400" type="color">#F50057</item>
+    <item name="magenta_600" type="color">#D81B60</item>
+
+
+    <item name="orange_udacity" type="color">#F08C35</item>
+    <item name="orange_400" type="color">#FF7043</item>
+    <item name="orange_600" type="color">#F4511E</item>
+</resources>

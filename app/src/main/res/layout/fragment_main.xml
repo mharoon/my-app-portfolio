@@ -1,81 +1,90 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingTop="@dimen/activity_horizontal_padding"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_horizontal_padding"
     android:paddingLeft="@dimen/activity_vertical_padding"
     android:paddingBottom="@dimen/activity_horizontal_padding"
     android:paddingRight="@dimen/activity_vertical_padding"
-    android:background="@color/light_blue" tools:context=".MainActivityFragment">
+    android:background="@color/light_blue"
+    tools:context=".MainActivityFragment">
 
-    <TextView
-        android:id="@+id/text_title"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:textSize="@dimen/abc_text_size_large_material"
-        android:layout_marginBottom="@dimen/main_margin"
-        android:text="@string/main_text_title" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_spotifyapp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/btn_main"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/text_title"
-        android:text="@string/main_btn_spotifyapp"
-        />
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:layout_marginBottom="@dimen/main_margin"
+            android:text="@string/main_text_title" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/btn_scoreapp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/btn_spotifyapp"
-        style="@style/btn_main"
-        android:text="@string/main_btn_scoreapp"
-        />
+        <Button
+            android:id="@+id/btn_spotifyapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/btn_main"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/text_title"
+            android:text="@string/main_btn_spotifyapp"
+            />
 
-    <Button
-        android:id="@+id/btn_libraryapp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/btn_scoreapp"
-        style="@style/btn_main"
-        android:text="@string/main_btn_libraryapp"
-        />
+        <Button
+            android:id="@+id/btn_scoreapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/btn_spotifyapp"
+            style="@style/btn_main"
+            android:text="@string/main_btn_scoreapp"
+            />
 
-    <Button
-        android:id="@+id/btn_builditbigger"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/btn_libraryapp"
-        style="@style/btn_main"
-        android:text="@string/main_btn_builditbigger"
-        />
+        <Button
+            android:id="@+id/btn_libraryapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/btn_scoreapp"
+            style="@style/btn_main"
+            android:text="@string/main_btn_libraryapp"
+            />
 
-    <Button
-        android:id="@+id/btn_xyzreader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/btn_builditbigger"
-        style="@style/btn_main"
-        android:text="@string/main_btn_xyzreader"
-        />
+        <Button
+            android:id="@+id/btn_builditbigger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/btn_libraryapp"
+            style="@style/btn_main"
+            android:text="@string/main_btn_builditbigger"
+            />
 
-    <Button
-        android:id="@+id/btn_myownapp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/selector_button_magenta"
-        android:textColor="@color/white"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/btn_xyzreader"
-        android:width="@dimen/main_btn_width"
-        android:layout_marginTop="@dimen/main_margin"
-        android:text="@string/main_btn_myownapp"
-        />
+        <Button
+            android:id="@+id/btn_xyzreader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/btn_builditbigger"
+            style="@style/btn_main"
+            android:text="@string/main_btn_xyzreader"
+            />
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/btn_myownapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_button_magenta"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/btn_xyzreader"
+            android:width="@dimen/main_btn_width"
+            android:layout_marginTop="@dimen/main_margin"
+            android:text="@string/main_btn_myownapp"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

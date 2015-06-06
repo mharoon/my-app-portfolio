@@ -10,5 +10,12 @@
     <string name="main_btn_builditbigger">Build IT Bigger</string>
     <string name="main_btn_xyzreader">XYZ Reader</string>
     <string name="main_btn_myownapp">Capstone: My own App</string>
+
+    <string name="spotify_app">This button will launch my spotify app!</string>
+    <string name="score_app">This button will launch my score app!</string>
+    <string name="library_app">This button will launch my library app!</string>
+    <string name="build_it_bigger">This button will launch my build it bigger app!</string>
+    <string name="xyz_reader">This button will launch my xyz reader app!</string>
+    <string name="my_own_app">This button will launch my own app!</string>
     <!-- /Main Activity -->
 </resources>

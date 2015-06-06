@@ -48,24 +48,30 @@ public class MainActivityFragment extends Fragment {
         public void onClick(final View v) {
             switch(v.getId()){
                 case R.id.btn_spotifyapp:
-                    Toast.makeText(getActivity(), "This button will launch my spotify app!", Toast.LENGTH_SHORT).show();
+                    ToastText(getActivity().getResources().getString(R.string.spotify_app));
                     break;
                 case R.id.btn_scoreapp:
-                    Toast.makeText(getActivity(), "This button will launch my score app!", Toast.LENGTH_SHORT).show();
+                    ToastText(getActivity().getResources().getString(R.string.score_app));
                     break;
                 case R.id.btn_libraryapp:
-                    Toast.makeText(getActivity(), "This button will launch my library app!", Toast.LENGTH_SHORT).show();
+                    ToastText(getActivity().getResources().getString(R.string.library_app));
                     break;
                 case R.id.btn_builditbigger:
-                    Toast.makeText(getActivity(), "This button will launch my build it bigger app!", Toast.LENGTH_SHORT).show();
+                    ToastText(getActivity().getResources().getString(R.string.build_it_bigger));
                     break;
                 case R.id.btn_xyzreader:
-                    Toast.makeText(getActivity(), "This button will launch my xyz reader app!", Toast.LENGTH_SHORT).show();
+                    ToastText(getActivity().getResources().getString(R.string.xyz_reader));
                     break;
                 case R.id.btn_myownapp:
-                    Toast.makeText(getActivity(), "This button will launch my own app!", Toast.LENGTH_SHORT).show();
+                    ToastText(getActivity().getResources().getString(R.string.my_own_app));
                     break;
             }
         }
     };
+
+    private void ToastText(String s){
+        Toast.makeText(getActivity(),s,Toast.LENGTH_SHORT).show();
+    }
+
+
 }
